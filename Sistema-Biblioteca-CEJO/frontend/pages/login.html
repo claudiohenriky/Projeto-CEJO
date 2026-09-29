@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CEJO | Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../css/login.css" />
+</head>
+
+<body>
+    <main class="login-page">
+        <section class="login-card">
+            <div class="brand-panel">
+                <div class="brand-header">
+                    <img src="../imagens/logo-cejo.svg" alt="Logo da escola CEJO" class="logo" />
+                    <div>
+                        <p class="eyebrow">Escola</p>
+                        <h1>CEJO</h1>
+                    </div>
+                </div>
+
+                <div class="brand-copy">
+                    <h2>Bem-vindo(a)</h2>
+                    <p>
+                        Acesso ao sistema da biblioteca escolar.
+                        Entre com seus dados para continuar.
+                    </p>
+                </div>
+
+                <div class="info-box">
+                    <span class="dot"></span>
+                    <p>Leitura, estudo e conhecimento em um só lugar.</p>
+                </div>
+            </div>
+
+            <div class="form-panel">
+                <div class="form-header">
+                    <p class="tag">Portal do aluno</p>
+                    <h3>Fazer login</h3>
+                </div>
+
+                <form id="loginForm" novalidate>
+                    <label for="usuario">Usuário</label>
+                    <input id="usuario" name="usuario" type="text" placeholder="Digite seu usuário ou RA" />
+
+                    <label for="senha">Senha</label>
+                    <input id="senha" name="senha" type="password" placeholder="Digite sua senha" />
+
+                    <button type="submit">Entrar</button>
+                </form>
+
+                <p id="mensagem" class="mensagem" aria-live="polite"></p>
+            </div>
+        </section>
+    </main>
+
+    <script src="../JS/login.JS"></script>
+</body>
+
+</html>

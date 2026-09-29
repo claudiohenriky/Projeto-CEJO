@@ -1,0 +1,11 @@
+<svg width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="220" height="220" rx="36" fill="#0D1B3D"/>
+  <path d="M110 28L164 50V98C164 138.5 137.4 175.3 110 192C82.6 175.3 56 138.5 56 98V50L110 28Z" fill="#153A7A"/>
+  <path d="M110 48L148 64V95C148 127.5 130.8 156.6 110 170C89.2 156.6 72 127.5 72 95V64L110 48Z" fill="#F6F8FC"/>
+  <path d="M88 94.5C88 84.3 96.3 76 106.5 76H113.5C123.7 76 132 84.3 132 94.5V127H88V94.5Z" fill="#D4AF37"/>
+  <path d="M81 131H139V145C139 151.6 133.6 157 127 157H93C86.4 157 81 151.6 81 145V131Z" fill="#D4AF37"/>
+  <path d="M95 104H125V115H95V104Z" fill="#0D1B3D"/>
+  <path d="M95 86H125V96H95V86Z" fill="#0D1B3D"/>
+  <path d="M74 164C86.7 152.9 97.8 149 110 149C122.2 149 133.3 152.9 146 164L136.8 179H83.2L74 164Z" fill="#D4AF37"/>
+  <text x="110" y="206" text-anchor="middle" font-size="24" font-family="Arial, sans-serif" font-weight="700" fill="#F5F3EE">CEJO</text>
+</svg>

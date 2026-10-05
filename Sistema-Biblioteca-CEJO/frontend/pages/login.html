@@ -4,59 +4,115 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CEJO | Login</title>
+    <meta name="theme-color" content="#0c2145" />
+    <meta name="description" content="Acesse o Sistema Bibliotecário Educacional CEJO." />
+    <title>Entrar | Sistema Bibliotecário Educacional CEJO</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../css/login.css" />
 </head>
 
 <body>
-    <main class="login-page">
-        <section class="login-card">
-            <div class="brand-panel">
-                <div class="brand-header">
-                    <img src="../imagens/logo-cejo.svg" alt="Logo da escola CEJO" class="logo" />
-                    <div>
-                        <p class="eyebrow">Escola</p>
-                        <h1>CEJO</h1>
-                    </div>
-                </div>
+    <main class="login-layout">
+        <section class="brand-panel" aria-labelledby="brand-title">
+            <div class="brand-content">
+                <a class="school-mark" href="../index.html" aria-label="Voltar à página inicial do CEJO">
+                    <img src="../imagens/brasao-colegio.svg" alt="Brasão do Colégio Estadual Jardim Oriente" />
+                </a>
 
                 <div class="brand-copy">
-                    <h2>Bem-vindo(a)</h2>
-                    <p>
-                        Acesso ao sistema da biblioteca escolar.
-                        Entre com seus dados para continuar.
-                    </p>
-                </div>
-
-                <div class="info-box">
-                    <span class="dot"></span>
-                    <p>Leitura, estudo e conhecimento em um só lugar.</p>
+                    <p class="brand-kicker">Sistema Bibliotecário Educacional</p>
+                    <h1 id="brand-title">Gestão de Conhecimento <span>CEJO.</span></h1>
+                    <p class="brand-description">Organize informações. Compartilhe conhecimento. Transforme o aprendizado.</p>
                 </div>
             </div>
 
-            <div class="form-panel">
-                <a class="home-link" href="../index.html"><span aria-hidden="true">←</span> Voltar ao site da escola</a>
-                <div class="form-header">
-                    <p class="tag">Portal do aluno</p>
-                    <h3>Fazer login</h3>
-                </div>
+            <div class="trust-badge">
+                <span class="trust-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M12 3 19 6v5c0 4.4-2.9 8.4-7 10-4.1-1.6-7-5.6-7-10V6l7-3Z" />
+                        <path d="m8.8 12 2.1 2.1 4.5-4.6" />
+                    </svg>
+                </span>
+                <span>
+                    <strong>Segurança e confiança</strong>
+                    <small>Seus dados estão protegidos.</small>
+                </span>
+            </div>
+        </section>
+
+        <section class="form-panel" aria-labelledby="welcome-title">
+            <a class="home-link" href="../index.html"><span aria-hidden="true">←</span> Página inicial</a>
+
+            <div class="form-content">
+                <header class="form-header">
+                    <p class="form-kicker">Portal do estudante</p>
+                    <h2 id="welcome-title">Bem-vindo(a)! <span aria-hidden="true">👋</span></h2>
+                    <p>Faça login para acessar o sistema.</p>
+                </header>
 
                 <form id="loginForm" novalidate>
-                    <label for="usuario">Usuário</label>
-                    <input id="usuario" name="usuario" type="text" placeholder="Digite seu usuário ou RA" />
+                    <div class="field-group">
+                        <label for="usuario">E-mail ou usuário</label>
+                        <div class="input-wrap">
+                            <svg class="field-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <circle cx="12" cy="8" r="3.5" />
+                                <path d="M5 20v-1.4a7 7 0 0 1 14 0V20" />
+                            </svg>
+                            <input id="usuario" name="usuario" type="text" autocomplete="username" placeholder="Digite seu e-mail ou usuário" aria-describedby="mensagem" />
+                        </div>
+                    </div>
 
-                    <label for="senha">Senha</label>
-                    <input id="senha" name="senha" type="password" placeholder="Digite sua senha" />
+                    <div class="field-group">
+                        <label for="senha">Senha</label>
+                        <div class="input-wrap">
+                            <svg class="field-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <rect x="5" y="10" width="14" height="11" rx="2" />
+                                <path d="M8 10V7a4 4 0 1 1 8 0v3" />
+                                <circle cx="12" cy="15" r="1" />
+                            </svg>
+                            <input id="senha" name="senha" type="password" autocomplete="current-password" placeholder="Digite sua senha" aria-describedby="mensagem" />
+                            <button class="password-toggle" id="passwordToggle" type="button" aria-label="Mostrar senha" aria-pressed="false">
+                                <svg class="eye-open" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <path d="M2.5 12s3.4-6 9.5-6 9.5 6 9.5 6-3.4 6-9.5 6-9.5-6-9.5-6Z" />
+                                    <circle cx="12" cy="12" r="2.7" />
+                                </svg>
+                                <svg class="eye-closed" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <path d="m3 3 18 18M10.6 6.2A9.8 9.8 0 0 1 12 6c6.1 0 9.5 6 9.5 6a16 16 0 0 1-3.1 3.7M6.2 6.3C3.8 8 2.5 12 2.5 12s3.4 6 9.5 6c1 0 1.9-.2 2.7-.5" />
+                                    <path d="M9.9 9.9a3 3 0 0 0 4.2 4.2" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
 
-                    <button type="submit">Entrar</button>
+                    <button class="text-action forgot-link" type="button" data-message="A recuperação de senha ainda não está disponível. Procure a coordenação da escola.">Esqueceu sua senha?</button>
+                    <button class="submit-button" type="submit">Entrar <span aria-hidden="true">→</span></button>
                 </form>
 
-                <p id="mensagem" class="mensagem" aria-live="polite"></p>
+                <p id="mensagem" class="message" aria-live="polite" role="status"></p>
+
+                <div class="divider" aria-hidden="true"><span>ou continue com</span></div>
+
+                <div class="social-actions" aria-label="Outras formas de acesso">
+                    <button class="social-button" type="button" data-message="O acesso com Google ainda não está configurado.">
+                        <span class="google-mark" aria-hidden="true">G</span>
+                        Google
+                    </button>
+                    <button class="social-button" type="button" data-message="O acesso com Microsoft ainda não está configurado.">
+                        <span class="microsoft-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+                        Microsoft
+                    </button>
+                </div>
+
+                <p class="access-request">Não tem uma conta? <button class="text-action" type="button" data-message="Para solicitar acesso, entre em contato com a coordenação da escola.">Solicitar acesso</button></p>
             </div>
+
+            <footer class="form-footer">
+                <img src="../imagens/brasao-colegio.svg" alt="" />
+                <p><strong>Gestão de Conhecimento CEJO</strong><span>Sistema Bibliotecário Educacional</span></p>
+                <small>© 2026 CEJO – Colégio Estadual Jardim Oriente.<br />Todos os direitos reservados.</small>
+            </footer>
         </section>
     </main>
 

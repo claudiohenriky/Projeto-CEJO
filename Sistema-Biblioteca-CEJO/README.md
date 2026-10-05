@@ -4,12 +4,17 @@
 
 - `frontend/index.html`: página institucional e ponto de entrada do site.
 - `frontend/pages/login.html`: acesso visual ao portal da biblioteca.
+- `frontend/pages/equipe.html`: página pública com os integrantes do projeto.
 - `frontend/css/`: estilos das páginas.
 - `frontend/JS/`: scripts do frontend.
 - `frontend/imagens/`: identidade visual e imagens locais.
 - `backend/`: aplicação Flask e rotas da API.
 - `database/`: esquema e dados iniciais do banco.
-- `docs/`: arquitetura, regras e manual do sistema.
+- `docs/`: documentação da concepção inicial do projeto.
+
+## Documentação
+
+O registro da ideia inicial, com requisitos e decisões ainda sujeitos a discussão e mudanças, está em [`docs/DOCUMENTACAO.md`](docs/DOCUMENTACAO.md). Ele não representa uma especificação final.
 
 ## Abrir com Live Server
 
@@ -23,7 +28,7 @@ A página institucional deve abrir na raiz do servidor. O botão **Acessar porta
 
 ## Estado atual
 
-O Live Server executa apenas o frontend estático. O formulário ainda não autentica usuários: o backend Flask, as rotas, os arquivos SQL e as dependências precisam ser implementados e configurados para habilitar o login real.
+O Live Server executa apenas o frontend estático. O formulário valida se usuário e senha foram preenchidos, mas ainda não autentica usuários. O backend Flask, as rotas, os arquivos SQL e as dependências precisam ser implementados e configurados para habilitar o login real. Os demais módulos descritos na documentação são requisitos do projeto, não funcionalidades disponíveis nesta fase.
 
 ## Organização recomendada
 

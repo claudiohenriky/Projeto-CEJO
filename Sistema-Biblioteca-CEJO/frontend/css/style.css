@@ -391,6 +391,128 @@ a {
   margin: 0;
 }
 
+.team-intro {
+  width: min(1120px, 87%);
+  margin: 0 auto;
+  padding: 78px 0 54px;
+  border-bottom: 1px solid var(--line);
+  animation: arrive 550ms ease-out both;
+}
+
+.team-kicker {
+  margin: 0 0 16px;
+  color: var(--coral);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.team-intro h1 {
+  max-width: 800px;
+  margin: 0;
+  font-family: var(--display);
+  font-size: 54px;
+  font-weight: 500;
+  line-height: 1.12;
+}
+
+.team-intro > p:last-child {
+  max-width: 680px;
+  margin: 20px 0 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.team-layout {
+  width: min(1120px, 87%);
+  margin: 0 auto;
+  padding: 50px 0 86px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(220px, 0.65fr);
+  align-items: start;
+  gap: 64px;
+}
+
+.team-list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+  list-style: none;
+}
+
+.team-member {
+  min-width: 0;
+  min-height: 142px;
+  padding: 23px 18px 20px 0;
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr);
+  align-content: start;
+  gap: 8px;
+  border-bottom: 1px solid var(--line);
+}
+
+.team-member:nth-child(even) {
+  padding-left: 20px;
+  border-left: 1px solid var(--line);
+}
+
+.team-index {
+  padding-top: 3px;
+  color: var(--coral);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.team-member h2 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+.team-role {
+  display: block;
+  margin-top: 9px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.team-context {
+  padding-top: 20px;
+  border-top: 4px solid var(--gold);
+}
+
+.team-context h2 {
+  margin: 0 0 22px;
+  font-family: var(--display);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.team-context dl {
+  margin: 0;
+}
+
+.team-context dt {
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.team-context dd {
+  margin: 5px 0 0;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
 @keyframes arrive {
   from {
     opacity: 0;
@@ -420,6 +542,7 @@ a {
     order: 3;
     width: 100%;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 12px;
     padding-top: 9px;
     border-top: 1px solid var(--line);
@@ -540,6 +663,44 @@ a {
   .site-footer {
     padding: 20px 6%;
     flex-wrap: wrap;
+  }
+
+  .team-intro,
+  .team-layout {
+    width: 88%;
+  }
+
+  .team-intro {
+    padding: 54px 0 38px;
+  }
+
+  .team-intro h1 {
+    font-size: 38px;
+  }
+
+  .team-intro > p:last-child {
+    font-size: 14px;
+  }
+
+  .team-layout {
+    grid-template-columns: 1fr;
+    gap: 38px;
+    padding: 36px 0 58px;
+  }
+
+  .team-list {
+    grid-template-columns: 1fr;
+  }
+
+  .team-member,
+  .team-member:nth-child(even) {
+    min-height: 0;
+    padding: 20px 0;
+    border-left: 0;
+  }
+
+  .team-member h2 {
+    font-size: 20px;
   }
 }
 

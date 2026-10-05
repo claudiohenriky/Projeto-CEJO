@@ -142,6 +142,7 @@ Sistema-Biblioteca-CEJO/
 	│   └── brasao-branco.png
 	└── pages/
 		├── index.html
+		├── escola.html
 		├── login.html
 		└── equipe.html
 ```
@@ -171,8 +172,8 @@ O JavaScript impede o envio do formulário vazio e informa que a integração co
 
 1. Abra a pasta `Sistema-Biblioteca-CEJO` no VS Code.
 2. Instale a extensão **Live Server**, caso ainda não esteja instalada.
-3. Abra `frontend/index.html` e selecione **Go Live**.
-4. Na página institucional, use **Acessar portal** para abrir a tela de login.
+3. Abra `frontend/index.html` e selecione **Go Live**; a raiz abre o formulário de login.
+4. A página institucional está em `frontend/pages/escola.html` e oferece acesso ao portal e à equipe.
 
 Também é possível abrir `frontend/pages/login.html` diretamente no navegador e testar o envio com os campos vazios e preenchidos.
 

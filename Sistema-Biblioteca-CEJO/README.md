@@ -2,7 +2,8 @@
 
 ## Estrutura
 
-- `frontend/index.html`: página institucional e ponto de entrada do site.
+- `frontend/index.html`: redireciona a entrada do site para o login.
+- `frontend/pages/escola.html`: página institucional da escola.
 - `frontend/pages/login.html`: acesso visual ao portal da biblioteca.
 - `frontend/pages/equipe.html`: página pública com os integrantes do projeto.
 - `frontend/css/`: estilos das páginas.
@@ -22,9 +23,9 @@ Abra `Sistema-Biblioteca-CEJO` como pasta do workspace no VS Code. A configuraç
 
 1. Instale a extensão **Live Server** no VS Code.
 2. Abra `frontend/index.html`.
-3. Clique em **Go Live** na barra inferior.
+3. Clique em **Go Live** na barra inferior. A raiz do servidor abre o novo login.
 
-A página institucional deve abrir na raiz do servidor. O botão **Acessar portal** leva ao formulário de login.
+A página institucional continua disponível em `frontend/pages/escola.html`; nela, **Acessar portal** leva ao formulário de login.
 
 ## Estado atual
 

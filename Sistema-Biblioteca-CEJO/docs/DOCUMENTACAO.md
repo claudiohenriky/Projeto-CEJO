@@ -136,10 +136,10 @@ Sistema-Biblioteca-CEJO/
 	├── css/
 	│   ├── login.css
 	│   └── style.css
-	├── JS/
-	│   ├── login.JS
-	│   └── main.JS
-	├── imagens/
+	├── js/
+	│   └── login.js
+	├── assets/
+	│   └── brasao-branco.png
 	└── pages/
 		├── index.html
 		├── login.html
@@ -148,7 +148,7 @@ Sistema-Biblioteca-CEJO/
 
 ### Responsabilidades e tecnologias
 
-- `frontend/`: páginas, estilos, scripts do navegador e imagens da identidade visual.
+- `frontend/`: páginas, estilos, scripts do navegador e assets da identidade visual.
 - `backend/app.py`: ponto de entrada planejado da aplicação Flask.
 - `backend/config.py`: configuração planejada para conexão com o banco.
 - `backend/routes/`: rotas planejadas de alunos, autenticação e biblioteca.

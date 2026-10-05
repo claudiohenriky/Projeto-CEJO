@@ -60,6 +60,8 @@ a {
   border-radius: 50%;
   background: var(--forest-deep);
   object-fit: contain;
+  filter: grayscale(1) invert(1) brightness(1.35);
+  mix-blend-mode: screen;
 }
 
 .brand span {
@@ -146,7 +148,9 @@ a {
   object-fit: contain;
   opacity: 0.94;
   transform: translateY(-50%);
-  filter: drop-shadow(0 18px 35px rgba(0, 0, 0, 0.2));
+  filter: grayscale(1) invert(1) brightness(1.35)
+    drop-shadow(0 18px 35px rgba(0, 0, 0, 0.2));
+  mix-blend-mode: screen;
 }
 
 .hero-shade {
@@ -553,6 +557,8 @@ a {
 
   .site-nav {
     order: 3;
+    filter: grayscale(1) invert(1) brightness(1.35);
+    mix-blend-mode: screen;
     width: 100%;
     justify-content: space-between;
     flex-wrap: wrap;

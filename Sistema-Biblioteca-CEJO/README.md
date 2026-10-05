@@ -6,8 +6,8 @@
 - `frontend/pages/login.html`: acesso visual ao portal da biblioteca.
 - `frontend/pages/equipe.html`: página pública com os integrantes do projeto.
 - `frontend/css/`: estilos das páginas.
-- `frontend/JS/`: scripts do frontend.
-- `frontend/imagens/`: identidade visual e imagens locais.
+- `frontend/js/`: scripts do frontend.
+- `frontend/assets/brasao-branco.png`: brasão escolar usado nas páginas do site.
 - `backend/`: aplicação Flask e rotas da API.
 - `database/`: esquema e dados iniciais do banco.
 - `docs/`: documentação da concepção inicial do projeto.
@@ -32,4 +32,4 @@ O Live Server executa apenas o frontend estático. O formulário valida se usuá
 
 ## Organização recomendada
 
-Mantenha cada responsabilidade no seu lugar: páginas em `frontend/pages/`, estilos em `frontend/css/`, scripts em `frontend/JS/`, arquivos de banco em `database/` e orientações em `docs/`. Quando a API for iniciada, documente aqui os comandos de instalação e execução do backend e os passos para configurar o banco.
+Mantenha cada responsabilidade no seu lugar: páginas em `frontend/pages/`, estilos em `frontend/css/`, scripts em `frontend/js/`, imagens em `frontend/assets/`, arquivos de banco em `database/` e orientações em `docs/`. Quando a API for iniciada, documente aqui os comandos de instalação e execução do backend e os passos para configurar o banco.

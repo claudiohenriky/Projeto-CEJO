@@ -199,4 +199,4 @@ Também é possível abrir `frontend/pages/login.html` diretamente no navegador 
 ## Histórico
 
 - **04/08/2026:** início do projeto.
-- **01/10/2026:** data de referência da documentação inicial.
+- **05/10/2026:** data de referência da documentação inicial.
